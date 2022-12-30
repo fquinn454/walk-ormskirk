@@ -66,13 +66,13 @@ nav {
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    background-color: gray;    
+    background-color: hsl(0deg 25% 46%);   
 }
 
 nav a {
     font-size: 1.2rem;
     color:white;
-    padding: 3% 2.5%;
+    padding: 2% 2.5%;
 }
 
 /* If the screen size is 2500px wide or more, set the font-size of <nav> to 2.5rem */
@@ -101,7 +101,7 @@ nav a {
     background-repeat: no-repeat;
     background-position: center;
     height: 35rem;
-    opacity: 0.8;
+    opacity: 0.7;
   }
 
   .splash {
@@ -119,6 +119,6 @@ nav a {
   /* If the screen size is 500px wide or less, set the font-size of splash to 2rem */
   @media screen and (max-width: 500px) {
     .splash {
-      font-size:2rem;
+      font-size:2.5rem;
     }
   }
