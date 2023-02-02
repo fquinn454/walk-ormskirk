@@ -122,7 +122,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  height:auto;
 }
 
 figure {
@@ -131,8 +130,9 @@ figure {
 
 .team-img {
   border-radius: 50%;
-  height: 65%;
   margin-bottom: 15px;
+  width: 200px;
+  height: 200px;
 }
 
 figcaption{
@@ -173,11 +173,6 @@ footer h3 {
   .splash {
     font-size:2.5rem;
   }
-
-  .team-img {
-    border-radius: 50%;
-    width: 50%;
-  }
 }
 
 @media screen and (min-width:421px) and (max-width:650px){
@@ -187,11 +182,6 @@ footer h3 {
 
   .splash {
     font-size: 3rem;
-  }
-
-  .team-img {
-    border-radius: 50%;
-    width: 60%;
   }
 
 }
@@ -205,11 +195,6 @@ footer h3 {
 
   .splash {
     font-size: 4.5rem;
-  }
-
-  .team-img {
-    border-radius: 50%;
-    width: 70%;
   }
 }
 
