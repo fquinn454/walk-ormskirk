@@ -83,16 +83,21 @@ h2 {
   padding: 20px 0;
 }
 
-img {
-  padding:20px;
-}
-
 .walks {
+  background-color:gainsboro;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-color: antiquewhite;
+  align-items: center;
 }
+
+
+img {
+  margin: 0 auto;
+  width:95%;
+}
+
+
+
 
 /* Splash */
 .splash-container {
@@ -105,59 +110,17 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 35rem;
   opacity: 0.7;
 }
 
 .splash {
   color: white;
-  font-size: 6rem;
 }
 
-  /* Media Queries */
+/* Media Queries */
 
-  /* If the screen size is 2500px wide or more, set the font-size of <nav> to 2.5rem */
-  @media screen and (min-width: 2500px){
-    nav a {
-      font-size: 4.5rem;
-    }
-    .splash {
-        font-size: 16rem;
-      }
-    h2 {
-      font-size : 6rem;
-    }
-  }
-  
-  
-    /* If the screen size is 501px wide up to 1023px, set the font-size of splash to 4rem */
-  @media screen and (min-width: 501px) and (max-width: 1023px){
-  
-      .splash-container {
-        height: 18rem;
-      }
-  
-      .splash {
-        font-size: 5rem;
-      }
-  
-      nav a {
-        font-size: 1.5rem;
-      }
-  
-      h2 {
-        font-size : 28px;
-        padding : 5px;
-        margin-left: 0.2rem;
-      }
-  
-      img {
-        padding: 2px;
-      }
-    }
-    
-    /* If the screen size is 500px wide or less, set the font-size of splash to 2rem */
-    @media screen and (max-width: 500px) {
+    /* If the screen size is 420px wide or less */
+    @media screen and (max-width: 420px) {
       .splash-container {
         height: 15rem;
       }
@@ -171,7 +134,7 @@ img {
       }
   
       h2 {
-        font-size : 28px;
+        font-size : 1.3rem;
         padding : 5px;
         margin-left: 0.2rem;
       }
@@ -180,6 +143,96 @@ img {
         padding: 5px;
       }
     }
+
+  @media screen and (min-width:421px) and (max-width:650px){
+    .splash-container {
+      height: 18rem;
+    }
+
+    .splash {
+      font-size: 3rem;
+    }
+
+    nav a {
+      font-size: 1.2rem;
+    }
+
+    h2 {
+      font-size : 1.5rem;
+      padding : 5px;
+      margin-left: 0.2rem;
+    }
+
+    img {
+      padding: 2px;
+    }
+  }
   
+  /* If the screen size is 651px wide up to 1023px */
+  @media screen and (min-width: 651px) and (max-width: 1023px){
 
+    .splash-container {
+      height: 18rem;
+    }
 
+    .splash {
+      font-size: 4.5rem;
+    }
+
+    nav a {
+      font-size: 1.5rem;
+    }
+
+    h2 {
+      font-size : 2.2rem;
+      padding : 5px;
+      margin-left: 0.2rem;
+    }
+
+    img {
+      padding: 2px;
+    }
+  }
+
+  /* If the screen size is 1024px wide up to 2499px, set the font-size of splash to 4rem */
+  @media screen and (min-width: 1024px) and (max-width: 2499px){
+    .splash-container {
+      height: 22rem;
+    }
+
+    .splash {
+      font-size: 4.5rem;
+    }
+
+    nav a {
+      font-size: 1.8rem;
+    }
+
+    h2 {
+      font-size : 3rem;
+      padding : 5px;
+      margin-left: 0.2rem;
+    }
+
+    img {
+      padding: 10px;
+    }
+    
+  }
+
+  /* If the screen size is 2500px wide or more, set the font-size of <nav> to 2.5rem */
+  @media screen and (min-width: 2500px){
+    .splash-container {
+      height: 60rem;
+    }
+    nav a {
+      font-size: 4.5rem;
+    }
+    .splash {
+        font-size: 16rem;
+      }
+    h2 {
+      font-size : 6rem;
+    }
+  }
+  
