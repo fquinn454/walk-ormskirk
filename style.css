@@ -64,9 +64,18 @@ footer, h2, nav a {
 }
 
 h2 {
-  margin-left: 20px;
+  display: inline;
+  margin-left: 3%;
   font-size: calc(28px + 0.390625vw);
   padding: 20px 0;
+}
+
+.back-to-top{
+  float:right;
+  margin-right: 3%;
+  color: white;
+  font-size: calc(16px + 0.390625vw);
+  padding: 10px 0;
 }
 
 
@@ -98,6 +107,7 @@ nav a {
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.7;
+  margin: 10px auto;
 }
 
 .splash {
@@ -122,6 +132,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  width:100%;
 }
 
 figure {
@@ -162,9 +173,11 @@ footer h3 {
 
 
 
-/* Media Queries*/
-/* If the screen size is 420px wide or less */
+/* Media Queries
+To adust the size of Walk Ormskirk h1 and background splash image
+*/
 
+/* If the screen size is 420px wide or less */
 @media screen and (max-width: 420px) {
   .splash-container {
     height: 15rem;
@@ -175,6 +188,7 @@ footer h3 {
   }
 }
 
+/* If the screen size is 421px wide up to 650px */
 @media screen and (min-width:421px) and (max-width:650px){
   .splash-container {
     height: 18rem;
@@ -198,7 +212,7 @@ footer h3 {
   }
 }
 
-/* If the screen size is 1024px wide up to 2499px, set the font-size of splash to 4rem */
+/* If the screen size is 1024px wide up to 2499px*/
 @media screen and (min-width: 1024px) and (max-width: 2499px){
   .splash-container {
     height: 22rem;
