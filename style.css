@@ -48,7 +48,7 @@
 
 /* Universal */
 html {
-    font-size: 18px;
+    font-size: calc(16px + 0.390625vw);
     color: white;
     background-color: rgb(114, 109, 51);  
 }
@@ -65,7 +65,7 @@ footer, h2, nav a {
 
 h2 {
   margin-left: 20px;
-  font-size: 44px;
+  font-size: calc(28px + 0.390625vw);
   padding: 20px 0;
 }
 
@@ -81,9 +81,9 @@ nav {
 }
 
 nav a {
-    font-size: 1.2rem;
-    color:white;
-    padding: 2% 2.5%;
+  font-size: calc(20px + 0.390625vw);
+  color:white;
+  padding: 2% 2.5%;
 }
 
 /* Splash */
@@ -113,7 +113,7 @@ nav a {
 }
 
 img {
-  margin: 0 auto;
+  margin: 10px auto;
   width:95%;
 }
 
@@ -121,23 +121,23 @@ img {
 .team {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  
+  justify-content: space-evenly;
 }
 
 figure {
-  width: 20rem;
   margin: 20px;
 }
 
 .team-img {
   border-radius: 50%;
-  height: 80%;
+  margin-bottom: 15px;
+  width: 200px;
+  height: 200px;
 }
 
 figcaption{
   text-align: center;
-  font-size:1.6rem;
+  font-size: calc(20px + 0.390625vw);
 }
 
 /*Footer*/
@@ -152,15 +152,19 @@ footer{
 footer p {
   text-align: center;
   margin-bottom: 0.8rem;
+  font-size: calc(14px + 0.390625vw);
 }
 
 footer h3 {
-  font-size: 1rem;
+  font-size: calc(20px + 0.390625vw);
   margin: 0.8rem 0;
 }
 
+
+
 /* Media Queries*/
 /* If the screen size is 420px wide or less */
+
 @media screen and (max-width: 420px) {
   .splash-container {
     height: 15rem;
@@ -168,25 +172,6 @@ footer h3 {
 
   .splash {
     font-size:2.5rem;
-  }
-
-  nav a {
-    font-size: 16px;
-  }
-
-  h2 {
-    font-size : 1.3rem;
-    padding : 5px;
-    margin-left: 0.2rem;
-  }
-
-  img {
-    padding: 5px;
-  }
-
-  .team-img {
-    border-radius: 50%;
-    width: 50%;
   }
 }
 
@@ -197,25 +182,6 @@ footer h3 {
 
   .splash {
     font-size: 3rem;
-  }
-
-  nav a {
-    font-size: 1.2rem;
-  }
-
-  h2 {
-    font-size : 1.5rem;
-    padding : 5px;
-    margin-left: 0.2rem;
-  }
-
-  img {
-    padding: 2px;
-  }
-
-  .team-img {
-    border-radius: 50%;
-    width: 60%;
   }
 
 }
@@ -230,26 +196,6 @@ footer h3 {
   .splash {
     font-size: 4.5rem;
   }
-
-  nav a {
-    font-size: 1.5rem;
-  }
-
-  h2 {
-    font-size : 2.2rem;
-    padding : 5px;
-    margin-left: 1.6rem;
-  }
-
-  img {
-    padding: 2px;
-  }
-
-  .team-img {
-    border-radius: 50%;
-    width: 70%;
-  }
-
 }
 
 /* If the screen size is 1024px wide up to 2499px, set the font-size of splash to 4rem */
@@ -261,36 +207,12 @@ footer h3 {
   .splash {
     font-size: 5.5rem;
   }
-
-  nav a {
-    font-size: 1.8rem;
-  }
-
-  h2 {
-    font-size : 3rem;
-    padding : 5px;
-    margin-left: 2rem;
-  }
-
-  img {
-    padding: 10px;
-  }
   
 }
 
-/* If the screen size is 2500px wide or more, set the font-size of <nav> to 2.5rem */
+/* If the screen size is 2500px wide or more */
 @media screen and (min-width: 2500px){
   .splash-container {
     height: 60rem;
   }
-  nav a {
-    font-size: 4.5rem;
-  }
-  .splash {
-      font-size: 16rem;
-    }
-  h2 {
-    font-size : 6rem;
-  }
 }
-  
