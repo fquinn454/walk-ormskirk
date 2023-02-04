@@ -3,18 +3,29 @@
     <head>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script> 
         <title>Walk Ormskirk</title>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <mata name="keywords" content="HTML, CSS"/>
     </head>
     <body>
-        <!--Top Navigation Bar-->
-        <nav id="top">
-            <a href="#walks">Walks</a>
+        <!--Top Navigation Bar with Dropdown Menu-->
+        <div class="topnav" id="top">
+            <div class="dropdown">
+              <button class="dropbtn">Walks
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#yellow-hammer">Yellow Hammer Route</a>
+                <a href="#war-horse">War Horse Route</a>
+                <a href="#wetlands-waterways">Wetlands & Waterways Route</a>
+              </div>
+            </div>
             <a href="#team">The Team</a>
             <a href="#contact-us">Contact Us</a>
-        </nav>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
         <!--Large "Walk Ormskrik" Splash Image-->
         <div class="splash-container">
             <h1 class="splash">Walk Ormskirk</h1>
@@ -22,16 +33,21 @@
         <!--Walk Details-->
         <div id="walks" class="walks">
             <!--Yellow Hammer Route-->
-            <div walk-container>
+            <div class="walk-container" id="yellow-hammer">
                 <h2>Yellow Hammer Route</h2><a class="back-to-top" href="#top">Back To Top</a>
                 <img src="./images/yellow-hammer-steps.png">
                 <img src="./images/yellow-hammer-map.png">
             </div>
             <!-- War Horse Route-->
-            <div walk-container>
+            <div class="walk-container" id="war-horse">
                 <h2>War Horse Route</h2><a class="back-to-top" href="#top">Back To Top</a>
                 <img src="./images/war-horse-steps.png">
                 <img src="./images/war-horse-map.png">
+            </div>
+            <div class="walk-container" id="wetlands-waterways">
+                <h2>Wetlands and Waterways Route</h2><a class="back-to-top" href="#top">Back To Top</a>
+                <img src="./images/wetlands-waterways-steps.png">
+                <img src="./images/wetlands-waterways-map.png">
             </div>
         </div>
         <!--Meet the Team-->
