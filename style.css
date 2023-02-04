@@ -63,7 +63,6 @@ footer, h2, .topnav, .dropbtn {
 
 h2 {
   display: inline;
-  margin-left: 3%;
   font-size: calc(24px + 0.390625vw);
   padding: 20px 0;
 }
@@ -161,6 +160,7 @@ h2 {
   flex-direction: column;
   align-content: center;
   margin-bottom: 10px;
+  margin-left:3%;
 }
 
 img {
@@ -169,11 +169,16 @@ img {
 }
 
 /*The team*/
+.team-container{
+  margin-left:5%;
+}
+
 .team {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   width:100%;
+  margin-left:3%;
 }
 
 figure {
@@ -187,9 +192,18 @@ figure {
   height: 200px;
 }
 
-figcaption{
+figcaption .team-img{
   text-align: center;
   font-size: calc(16px + 0.390625vw);
+}
+
+figcaption p, .walks{
+  text-align: left;
+  font-size: calc(12px + 0.390625vw);
+}
+
+figcaption a{
+  color:white;
 }
 
 /*Footer*/
