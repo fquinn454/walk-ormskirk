@@ -47,7 +47,7 @@
   }
 
 /* Universal */
-html {
+html, .dropbtn {
     font-size: calc(16px + 0.390625vw);
     color: white;
     background-color: rgb(114, 109, 51);  
@@ -55,18 +55,16 @@ html {
 
 body, h1 {
     font-family: 'Courgette', cursive;
-    
 }
 
-footer, h2, nav a {
+footer, h2, .topnav, .dropbtn {
     font-family: 'Dosis', sans-serif;
-
 }
 
 h2 {
   display: inline;
   margin-left: 3%;
-  font-size: calc(28px + 0.390625vw);
+  font-size: calc(24px + 0.390625vw);
   padding: 20px 0;
 }
 
@@ -74,25 +72,68 @@ h2 {
   float:right;
   margin-right: 3%;
   color: white;
-  font-size: calc(16px + 0.390625vw);
+  font-size: calc(14px + 0.390625vw);
   padding: 10px 0;
 }
 
 
 /* Nav Bar */
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-     
+.topnav{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height:auto;
 }
 
-nav a {
-  font-size: calc(20px + 0.390625vw);
+.dropbtn {
+  text-align: left;
+  width: 100%;
+}
+
+.dropbtn, .topnav a {
+  padding: 15px 15px;
   color:white;
-  padding: 2% 2.5%;
+  text-decoration: none;
+  border: none;
+}
+
+.dropbtn:hover{
+  background-color: lightgrey;
+  color:black;
+}
+
+.dropdown-content{
+  display:none;
+}
+
+.dropdown-content a {
+  display:block;
+  width:100%;
+  text-decoration: none;
+  color:black;
+}
+
+.dropdown-content:hover{
+  display:block;
+}
+
+.topnav a:hover{
+  background-color: lightgray;
+  color:black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-decoration: none;
+  background-color: lightgray;
+  color:black;
+}
+
+.dropdown-content a:hover {
+  background-color: darkgrey;
+  color:white;
 }
 
 /* Splash */
@@ -107,7 +148,7 @@ nav a {
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.7;
-  margin: 10px auto;
+  margin-bottom:10px;
 }
 
 .splash {
@@ -148,7 +189,7 @@ figure {
 
 figcaption{
   text-align: center;
-  font-size: calc(20px + 0.390625vw);
+  font-size: calc(16px + 0.390625vw);
 }
 
 /*Footer*/
@@ -186,6 +227,10 @@ To adust the size of Walk Ormskirk h1 and background splash image
   .splash {
     font-size:2.5rem;
   }
+
+  .back-to-top{
+    display: none;
+  }
 }
 
 /* If the screen size is 421px wide up to 650px */
@@ -196,6 +241,10 @@ To adust the size of Walk Ormskirk h1 and background splash image
 
   .splash {
     font-size: 3rem;
+  }
+
+  .back-to-top{
+    display: none;
   }
 
 }
