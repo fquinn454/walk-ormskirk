@@ -47,92 +47,111 @@
   }
 
 /* Universal */
+body {
+  width:fit-content;
+
+}
 html, .dropbtn {
     font-size: calc(16px + 0.390625vw);
     color: white;
-    background-color: rgb(114, 109, 51);  
+    background-color: rgb(114, 109, 51); 
 }
 
 body, h1 {
     font-family: 'Courgette', cursive;
 }
 
-footer, h2, .topnav, .dropbtn {
+footer, h2, .navbar, .dropbtn {
     font-family: 'Dosis', sans-serif;
 }
 
 h2 {
-  display: inline;
-  font-size: calc(24px + 0.390625vw);
+  display: inline-block;
+  font-size: calc(28px + 0.390625vw);
   padding: 20px 0;
 }
 
 .back-to-top{
   float:right;
-  margin-right: 3%;
   color: white;
   font-size: calc(14px + 0.390625vw);
   padding: 10px 0;
 }
 
+.content-box{
+  margin: 0 15px;
+  padding: 0 2%;
+}
 
 /* Nav Bar */
-.topnav{
-  display:flex;
+/* Navbar container */
+.navbar {
+  display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  height:auto;
+  overflow: hidden;
+  background-color:  rgb(114, 109, 51); 
 }
 
-.dropbtn {
-  text-align: left;
-  width: 100%;
-}
-
-.dropbtn, .topnav a {
-  padding: 15px 15px;
-  color:white;
+/* Links inside the navbar */
+.navbar a {
+  font-size: calc(16px + 0.390625vw);
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: calc(16px + 0.390625vw);
   border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
 }
 
-.dropbtn:hover{
-  background-color: lightgrey;
-  color:black;
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(186, 159, 48);
 }
 
-.dropdown-content{
-  display:none;
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
+/* Links inside the dropdown */
 .dropdown-content a {
-  display:block;
-  width:100%;
+  float: none;
+  color: black;
+  padding: 12px 16px;
   text-decoration: none;
-  color:black;
+  display: block;
+  text-align: left;
 }
 
-.dropdown-content:hover{
-  display:block;
-}
-
-.topnav a:hover{
-  background-color: lightgray;
-  color:black;
-}
-
-.dropdown:hover .dropdown-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-decoration: none;
-  background-color: lightgray;
-  color:black;
-}
-
+/* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: darkgrey;
-  color:white;
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Splash */
@@ -160,25 +179,19 @@ h2 {
   flex-direction: column;
   align-content: center;
   margin-bottom: 10px;
-  margin-left:3%;
 }
 
 img {
   margin: 10px auto;
-  width:95%;
 }
 
 /*The team*/
-.team-container{
-  margin-left:5%;
-}
 
 .team {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   width:100%;
-  margin-left:3%;
 }
 
 figure {
@@ -192,14 +205,16 @@ figure {
   height: 200px;
 }
 
-figcaption .team-img{
-  text-align: center;
-  font-size: calc(16px + 0.390625vw);
+figcaption {
+  font-size: calc(12px + 0.390625vw);
 }
 
-figcaption p, .walks{
+.walks figcaption{
   text-align: left;
-  font-size: calc(12px + 0.390625vw);
+}
+
+.team figcaption {
+  text-align: center;
 }
 
 figcaption a{
@@ -226,8 +241,6 @@ footer h3 {
   margin: 0.8rem 0;
 }
 
-
-
 /* Media Queries
 To adust the size of Walk Ormskirk h1 and background splash image
 */
@@ -244,6 +257,7 @@ To adust the size of Walk Ormskirk h1 and background splash image
 
   .back-to-top{
     display: none;
+    
   }
 }
 
