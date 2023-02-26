@@ -306,4 +306,8 @@ To adust the size of Walk Ormskirk h1 and background splash image
   .splash-container {
     height: 60rem;
   }
+    
+  .splash {
+    font-size: 7rem;
+  }
 }
